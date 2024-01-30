@@ -181,6 +181,11 @@ section.log {
           text-align: center;
           font-weight: 200;
         }
+        a {
+          color: $black-color;
+          text-decoration: none;
+        }
+
         button {
           font-size: 16px;
           margin: 10px;
