@@ -1,0 +1,16 @@
+@use "variables.scss" as *;
+
+@mixin flex($jc: center, $ai: center, $gap: 0, $row: row) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gap;
+}
+
+@mixin header-text($color: $black-color, $fs: 34px, $fm: $primary-font) {
+  font-size: $fs;
+  font-family: $fm;
+  font-weight: 200;
+  color: $color;
+  text-align: center;
+}

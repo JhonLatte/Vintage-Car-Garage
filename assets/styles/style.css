@@ -1,0 +1,568 @@
+body {
+  color: #2f2e2e;
+  width: 100%;
+  background-color: #fff;
+  font-family: "Noto Sans KR", sans-serif;
+  border-style: solid;
+}
+
+nav {
+  font-size: 15px;
+  font-weight: 100;
+  background-color: #2f2e2e;
+}
+nav div {
+  background-color: #2f2e2e;
+}
+nav div ul {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+nav div .social {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0px;
+  height: 100%;
+}
+nav div .social li {
+  list-style: none;
+}
+nav div .social li a {
+  font-size: 20px;
+  color: #fff;
+  transition: 0.5s ease;
+}
+nav div a .logicon .log :hover {
+  color: #b0aaa9;
+  transition: 0.5s ease;
+}
+nav div :hover {
+  color: #b0aaa9;
+  transition: 0.5s ease;
+}
+
+section.log {
+  height: 100vh;
+}
+section.log div.ex-lg {
+  text-align: right;
+  font-size: 40px;
+  padding: 30px;
+}
+section.log div.ex-lg a {
+  color: #2f2e2e;
+}
+section.log div.ex-lg a:hover {
+  color: #b0aaa9;
+}
+section.log article {
+  padding: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+section.log article h1 {
+  font-size: 50px;
+  font-weight: 200;
+}
+section.log article p {
+  font-weight: 200;
+  font-size: 18px;
+}
+section.log article button {
+  color: #fff;
+  font-size: 16px;
+  background-color: #b03737;
+  width: 24vh;
+  height: 7vh;
+  border: 0;
+}
+
+.book {
+  width: 100%;
+}
+.book section.grid {
+  margin-top: 15vh;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 1fr;
+  padding: 10vh 0px;
+}
+.book section.grid article .text-header {
+  font-weight: 300;
+  text-align: center;
+}
+.book section.grid article div.horizontal-line {
+  margin: 30px auto;
+  background-color: #2f2e2e;
+  width: 40px;
+  height: 2px;
+}
+.book section.grid aside.container {
+  height: 283px;
+  width: 140vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: solid black;
+  border-width: 0.5px;
+  padding: 0px;
+}
+.book section.grid aside.container .book-imga {
+  width: 100%;
+}
+.book section.grid aside.container .book-imga .book-img img {
+  width: 52vh;
+}
+.book section.grid aside.container .bk-about {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.book section.grid aside.container .bk-about a {
+  color: #2f2e2e;
+}
+.book section.grid aside.container .bk-about a h4 {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 250;
+}
+.book section.grid aside.container .bk-about p {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 200;
+}
+.book section.grid aside.container .bk-about button {
+  font-size: 16px;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vh;
+  background-color: #2f2e2e;
+}
+.book section.grid aside.container .bk-about button:hover {
+  color: #b0aaa9;
+  transition: 0.5s ease;
+}
+
+.main-car {
+  width: 100%;
+  height: 100%;
+  background-color: #2f2e2e;
+  margin-top: 25px;
+}
+.main-car .video-conteiner {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main-car .about-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-car .about-header div.row {
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 25%;
+  left: 0px;
+  right: 0px;
+}
+.main-car .toolskey {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  border: solid;
+  border-radius: 50%;
+  height: 125px;
+  width: 125px;
+  margin: 0px auto;
+}
+.main-car .toolskey .horizontal-line {
+  margin: 15px auto;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+}
+.main-car .toolskey img {
+  position: absolute;
+  width: 80px;
+}
+.main-car h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 70px;
+  padding: 0px auto;
+  margin: 0px auto;
+  text-align: center;
+}
+.main-car h3 {
+  color: #fff;
+  font-weight: 100;
+  font-size: 28px;
+  padding: 0px auto;
+  margin: 0px auto;
+  text-align: center;
+}
+.main-car footer {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.main-car footer ul {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  left: 0px;
+  right: 0px;
+  gap: 30px;
+  top: 100%;
+}
+.main-car footer ul li {
+  font-size: 35px;
+}
+.main-car footer ul li a {
+  color: #fff;
+}
+
+.srvc-black {
+  background-image: url(../images/matte-black-color.png);
+  background-attachment: fixed;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 100;
+  padding-top: 100px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.srvc-black .about-tools {
+  margin-bottom: 35px;
+}
+.srvc-black .about-tools h3 {
+  padding: 20px;
+  font-weight: 300;
+}
+.srvc-black .about-tools .horizontal-line {
+  margin: 0px auto;
+  width: 40px;
+  height: 3px;
+  background-color: #fff;
+}
+.srvc-black .row {
+  width: 100%;
+  padding: 50px;
+}
+.srvc-black .row .col {
+  text-align: center;
+}
+.srvc-black .row .col h4 {
+  font-weight: 200;
+}
+.srvc-black .row .col article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  height: 125px;
+  width: 125px;
+  margin: 0px auto;
+}
+.srvc-black .row .col article img {
+  position: absolute;
+  width: 100px;
+}
+
+.ourwork {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 40px 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.ourwork h2 {
+  font-size: 34px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 200;
+  color: #2f2e2e;
+  text-align: center;
+}
+.ourwork div.horizontal-line {
+  margin: 30px auto;
+  background-color: #2f2e2e;
+  width: 40px;
+  height: 2px;
+}
+.ourwork p {
+  font-weight: 200;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.ourwork article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+.ourwork article aside {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  background-image: url(../images/headlight.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ourwork article aside:nth-child(2) {
+  background-image: url(../images/man-putting.png);
+}
+.ourwork article aside:nth-child(3) {
+  background-image: url(../images/headlight-2-black.png);
+}
+.ourwork article aside:nth-child(4) {
+  background-image: url(../images/headlight-3-white.png);
+}
+.ourwork article aside:nth-child(5) {
+  background-image: url(../images/Speedometer.png);
+}
+.ourwork article aside:nth-child(6) {
+  background-image: url(../images/Woman-drawing.png);
+}
+.ourwork article aside div.overlay {
+  color: #fff;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.ourwork article aside div.overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.ourwork article aside div.overlay .img-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s ease;
+}
+.ourwork article aside div.overlay div .heart-ico:active {
+  z-index: 1;
+  background: url(../svg/fill-heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ourwork h4 {
+  font-size: 34px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 200;
+  color: #2f2e2e;
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+}
+.ourwork p {
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.section-about {
+  background-image: url(../images/background-tools.png);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120vh;
+  text-align: center;
+}
+
+.section-text {
+  background-color: #fff;
+  max-width: 800px;
+  padding: 100px 20px;
+}
+.section-text h3 {
+  font-weight: 300;
+  font-size: 28px;
+}
+.section-text .horizontal-line {
+  margin: 15px auto;
+  width: 40px;
+  height: 2px;
+  background-color: #2f2e2e;
+}
+.section-text span {
+  font-weight: 200;
+  font-size: 17px;
+}
+
+.bck {
+  height: 50px;
+  padding: 25%;
+  background-image: url(../images/2-human-seet.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s ease;
+}
+
+.find {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-direction: column;
+  background-image: url(../images/background-tools.png);
+  background-attachment: fixed;
+  height: 170vh;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+.find .container .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.find .container .box img {
+  width: 25%;
+}
+.find .find-us {
+  background-color: #fff;
+  padding: 100px 20px;
+  margin: 0px 300px;
+}
+.find .find-us h3 {
+  font-size: 34px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 200;
+  color: #2f2e2e;
+  text-align: center;
+  font-weight: 300;
+}
+.find .find-us div.horizontal-line {
+  margin: 30px auto;
+  background-color: #2f2e2e;
+  width: 40px;
+  height: 2px;
+}
+.find .find-us .findus {
+  font-family: 100;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.find .find-us .findus .text-us {
+  font-weight: 200;
+}
+.find .find-us .findus .text-us a {
+  color: #2f2e2e;
+  text-decoration: none;
+}
+.find .inp ul li {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.find .inp ul li label {
+  font-weight: 200;
+  padding: 5px;
+  font-family: 100;
+  font-size: 15px;
+  display: flex;
+}
+.find .inp ul li label input {
+  width: 10px;
+}
+.find .inp ul li .textarea {
+  resize: none;
+  width: 300px;
+}
+.find .inp ul li button {
+  width: 300px;
+  color: #fff;
+  background-color: #2f2e2e;
+}
+
+.footend {
+  background-color: #2f2e2e;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footend section ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.footend section ul li {
+  font-size: 25px;
+}
+.footend section ul li a {
+  list-style: none;
+  color: white;
+}
+.footend section article {
+  font-size: 13px;
+  color: white;
+  font-weight: 200;
+}
+.footend section article a {
+  font-style: italic;
+  color: white;
+}
+
+div.chat {
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.chat a img {
+  width: 40px;
+  color-scheme: #2f2e2e;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,639 @@
+@use "variables.scss" as *;
+@use "mixins.scss" as *;
+
+// * {
+//   border: solid 1px red;
+// }
+
+body {
+  color: $black-color;
+  width: 100%;
+  background-color: $white-color;
+  font-family: $primary-font;
+  border-style: solid;
+}
+
+// ----------NAV------------
+
+nav {
+  font-size: 15px;
+  font-weight: 100;
+  background-color: $black-color;
+
+  div {
+    background-color: $black-color;
+
+    ul {
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+    .social {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      align-items: center;
+      padding: 70px 0px;
+      height: 100%;
+
+      li {
+        list-style: none;
+        a {
+          font-size: 20px;
+          color: $white-color;
+          transition: 0.5s ease;
+        }
+      }
+    }
+
+    a {
+      .logicon {
+        .log {
+          :hover {
+            color: $active-color;
+            transition: 0.5s ease;
+          }
+        }
+      }
+    }
+
+    :hover {
+      color: $active-color;
+      transition: 0.5s ease;
+    }
+  }
+}
+
+// ------------LOG IN----------------
+
+section.log {
+  height: 100vh;
+  div.ex-lg {
+    text-align: right;
+    font-size: 40px;
+    padding: 30px;
+    a {
+      color: $black-color;
+      &:hover {
+        color: $active-color;
+      }
+    }
+  }
+  article {
+    padding: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    h1 {
+      font-size: 50px;
+      font-weight: 200;
+    }
+    p {
+      font-weight: 200;
+      font-size: 18px;
+    }
+    button {
+      color: $white-color;
+      font-size: 16px;
+      background-color: #b03737;
+      width: 24vh;
+      height: 7vh;
+      border: 0;
+    }
+  }
+}
+
+// -------------ONLINE BOOK------------
+
+.book {
+  width: 100%;
+  section.grid {
+    margin-top: 15vh;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 10vh 0px;
+    article {
+      .text-header {
+        font-weight: 300;
+        text-align: center;
+      }
+      div.horizontal-line {
+        margin: 30px auto;
+        background-color: $black-color;
+        width: 40px;
+        height: 2px;
+      }
+    }
+    aside.container {
+      height: 283px;
+      width: 140vh;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border: solid black;
+      border-width: 0.5px;
+      padding: 0px;
+      .book-imga {
+        width: 100%;
+
+        .book-img {
+          img {
+            width: 52vh;
+          }
+        }
+      }
+
+      .bk-about {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        a {
+          color: $black-color;
+
+          h4 {
+            font-size: 22px;
+            text-align: center;
+            font-weight: 250;
+          }
+        }
+        p {
+          padding: 0px;
+          margin: 0px;
+          font-size: 16px;
+          text-align: center;
+          font-weight: 200;
+        }
+        button {
+          font-size: 16px;
+          margin: 10px;
+          padding: 10px;
+          color: $white-color;
+          font-weight: 200;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 20vh;
+          background-color: $black-color;
+          &:hover {
+            color: $active-color;
+            transition: 0.5s ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ------------HEADER---------------
+
+.main-car {
+  width: 100%;
+  height: 100%;
+  background-color: $black-color;
+  margin-top: 25px;
+  .video-conteiner {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // top: 5px;
+    position: relative;
+  }
+
+  .about-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div.row {
+      z-index: 1;
+      width: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 25%;
+      left: 0px;
+      right: 0px;
+    }
+  }
+
+  .toolskey {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $white-color;
+    border: solid;
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    margin: 0px auto;
+
+    .horizontal-line {
+      margin: 15px auto;
+      width: 40px;
+      height: 2px;
+      background-color: $white-color;
+    }
+
+    img {
+      position: absolute;
+      width: 80px;
+    }
+  }
+
+  h1 {
+    font-family: $secondary-font;
+    color: $white-color;
+    font-weight: 600;
+    font-size: 70px;
+    padding: 0px auto;
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  h3 {
+    color: $white-color;
+    font-weight: 100;
+    font-size: 28px;
+    padding: 0px auto;
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  footer {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    ul {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      left: 0px;
+      right: 0px;
+      gap: 30px;
+      top: 100%;
+
+      li {
+        font-size: 35px;
+        a {
+          color: $white-color;
+        }
+      }
+    }
+  }
+}
+
+// ------------------- SERVECES MAIN-------------
+
+.srvc-black {
+  background-image: url(../images/matte-black-color.png);
+  background-attachment: fixed;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white-color;
+  font-family: $primary-font;
+  font-weight: 100;
+  padding-top: 100px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  .about-tools {
+    margin-bottom: 35px;
+
+    h3 {
+      padding: 20px;
+      font-weight: 300;
+    }
+
+    .horizontal-line {
+      margin: 0px auto;
+      width: 40px;
+      height: 3px;
+      background-color: $white-color;
+    }
+  }
+
+  .row {
+    width: 100%;
+    padding: 50px;
+
+    .col {
+      text-align: center;
+
+      h4 {
+        font-weight: 200;
+      }
+
+      article {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: $white-color;
+        height: 125px;
+        width: 125px;
+        margin: 0px auto;
+
+        img {
+          position: absolute;
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
+// ----------------- OUR WORK MAIN----------------------
+
+.ourwork {
+  font-family: $primary-font;
+  margin: 40px 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  h2 {
+    @include header-text;
+  }
+  div.horizontal-line {
+    margin: 30px auto;
+    background-color: $black-color;
+    width: 40px;
+    height: 2px;
+  }
+
+  p {
+    font-weight: 200;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+
+    aside {
+      height: 300px;
+      width: 100%;
+      position: relative;
+      background-image: url(../images/headlight.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      &:nth-child(2) {
+        background-image: url(../images/man-putting.png);
+      }
+
+      &:nth-child(3) {
+        background-image: url(../images/headlight-2-black.png);
+      }
+
+      &:nth-child(4) {
+        background-image: url(../images/headlight-3-white.png);
+      }
+
+      &:nth-child(5) {
+        background-image: url(../images/Speedometer.png);
+      }
+
+      &:nth-child(6) {
+        background-image: url(../images/Woman-drawing.png);
+      }
+
+      div.overlay {
+        color: $white-color;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: 0.5s ease;
+        &:hover {
+          opacity: 1;
+          cursor: pointer;
+        }
+
+        .img-icon {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          transition: 0.5s ease;
+        }
+        div {
+          .heart-ico:active {
+            z-index: 1;
+            background: url(../svg/fill-heart.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+      }
+    }
+  }
+
+  h4 {
+    @include header-text;
+    font-size: 40px;
+    color: $white-color;
+  }
+  p {
+    font-weight: 100;
+    font-size: 15px;
+  }
+}
+
+// -------------------ABOUT US--------------
+
+.section-about {
+  background-image: url(../images/background-tools.png);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120vh;
+  text-align: center;
+}
+
+.section-text {
+  background-color: $white-color;
+  max-width: 800px;
+  padding: 100px 20px;
+  h3 {
+    font-weight: 300;
+    font-size: 28px;
+  }
+
+  .horizontal-line {
+    margin: 15px auto;
+    width: 40px;
+    height: 2px;
+    background-color: $black-color;
+  }
+
+  span {
+    font-weight: 200;
+    font-size: 17px;
+  }
+}
+
+// ---------------------BACKGROUND----------
+
+.bck {
+  height: 50px;
+  padding: 25%;
+  background-image: url(../images/2-human-seet.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s ease;
+}
+
+// --------------------FINd US------------
+
+.find {
+  @include flex;
+  flex-direction: column;
+  background-image: url(../images/background-tools.png);
+  background-attachment: fixed;
+  height: 170vh;
+  grid-template-columns: 1fr;
+  width: 100%;
+  .container {
+    .box {
+      @include flex;
+      img {
+        width: 25%;
+      }
+    }
+  }
+  .find-us {
+    background-color: $white-color;
+    padding: 100px 20px;
+    margin: 0px 300px;
+    h3 {
+      @include header-text;
+      font-weight: 300;
+    }
+    div.horizontal-line {
+      margin: 30px auto;
+      background-color: $black-color;
+      width: 40px;
+      height: 2px;
+    }
+    .findus {
+      font-family: 100;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .text-us {
+        font-weight: 200;
+        a {
+          color: $black-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .inp {
+    ul {
+      li {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        label {
+          font-weight: 200;
+          padding: 5px;
+          font-family: 100;
+          font-size: 15px;
+          display: flex;
+          input {
+            width: 10px;
+          }
+        }
+        .textarea {
+          resize: none;
+          width: 300px;
+        }
+        button {
+          width: 300px;
+          color: $white-color;
+          background-color: $black-color;
+        }
+      }
+    }
+  }
+}
+
+// ----------------FOOTEER-------------
+
+.footend {
+  // position: absolute;
+  background-color: $black-color;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  section {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      li {
+        font-size: 25px;
+        a {
+          list-style: none;
+          color: white;
+        }
+      }
+    }
+    article {
+      font-size: 13px;
+      color: white;
+      font-weight: 200;
+      a {
+        font-style: italic;
+        color: white;
+      }
+    }
+  }
+}
+
+// ---------------MESAGE HELPER---------
+
+div.chat {
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 50%;
+  background-color: $white-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    img {
+      width: 40px;
+      color-scheme: $black-color;
+    }
+  }
+}
