@@ -105,7 +105,7 @@ section.log article button {
 }
 .book section.grid aside.container {
   height: 283px;
-  width: 140vh;
+  width: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border: solid black;
@@ -115,11 +115,25 @@ section.log article button {
 .book section.grid aside.container .book-imga {
   width: 100%;
 }
-.book section.grid aside.container .book-imga .book-img img {
-  width: 52vh;
+.book section.grid aside.container .book-imga .book-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/blue-car-salone.webp);
+  height: 100%;
+  width: 100%;
+}
+.book section.grid aside.container .book-imga .book-img .img {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+}
+.book section.grid aside.container .book-imga .book-img .img:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 .book section.grid aside.container .bk-about {
-  margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -129,7 +129,7 @@ section.log {
     }
     aside.container {
       height: 283px;
-      width: 140vh;
+      width: 100vh;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       border: solid black;
@@ -139,14 +139,27 @@ section.log {
         width: 100%;
 
         .book-img {
-          img {
-            width: 52vh;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+
+          background-image: url(../images/blue-car-salone.webp);
+          height: 100%;
+          width: 100%;
+          .img {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            &:hover {
+              opacity: 1;
+              cursor: pointer;
+            }
           }
         }
       }
 
       .bk-about {
-        margin: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
