@@ -206,6 +206,48 @@ section.log {
   }
 }
 
+// -------------------BOOK NOW---------------
+
+.coming-soon {
+  margin: 30vh 0px;
+  article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 50px;
+      font-family: cursive;
+    }
+    a {
+      button {
+        border: none;
+        color: $white-color;
+        background-color: #b03737;
+        height: 10vh;
+        width: 30vh;
+        margin: 30px 0px;
+      }
+    }
+  }
+}
+
+// main.book-now {
+//   margin-top: 10vh;
+//   .style-ride {
+//     h1 {
+//       font-weight: 250;
+//       text-align: center;
+//       font-size: 32px;
+//     }
+//     p {
+//       font-weight: 200;
+//       text-align: center;
+//       font-size: 16px;
+//     }
+//   }
+// }
+
 // -----------------Portfolio-----------
 main.cars-portfolio {
   background-color: floralwhite;

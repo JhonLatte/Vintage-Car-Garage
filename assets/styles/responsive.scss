@@ -117,6 +117,28 @@ section.log {
   }
 }
 
+// ---------------------------BOOK ONLINE-------------------------------
+.coming-soon {
+  article {
+    h1 {
+      @media screen and (max-width: 470px) {
+        font-size: 40px;
+      }
+      @media screen and (max-width: 340px) {
+        font-size: 30px;
+      }
+    }
+    a {
+      button {
+        @media screen and (max-width: 340px) {
+          width: 20vh;
+          height: 8vh;
+        }
+      }
+    }
+  }
+}
+
 // -----------------------------PORTFOLIO--------------------------------
 
 main.cars-portfolio {
