@@ -10,13 +10,12 @@ body {
   width: 100%;
   background-color: $white-color;
   font-family: $primary-font;
-  border-style: solid;
 }
 
 // ----------NAV------------
 
 nav {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 100;
   background-color: $black-color;
 
@@ -207,6 +206,242 @@ section.log {
   }
 }
 
+// -----------------Portfolio-----------
+main.cars-portfolio {
+  background-color: floralwhite;
+
+  section.vaz-salone {
+    background-image: url(../images/Portfolio/vaz-salone.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+  }
+  article {
+    padding: 45px;
+    h4 {
+      font-size: 21px;
+      font-family: $fourt-font;
+      letter-spacing: 3px;
+    }
+    p {
+      font-size: 15px;
+      color: $portfotext-color;
+      font-style: $thirdy-font;
+    }
+  }
+
+  section.new-life {
+    width: 100%;
+    height: 100%;
+    // margin: 40px 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url(../images/Portfolio/N.L.I.O.L/background.jpg);
+    h2 {
+      @include header-text;
+      padding-top: 12vh;
+      font-size: 32px;
+      font-family: $fourt-font;
+      font-weight: 400;
+    }
+    article {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      place-items: center;
+      margin: 0px auto;
+      width: 90%;
+      gap: 15px;
+
+      aside {
+        height: 300px;
+        width: 100%;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        &:nth-child(1) {
+          background-image: url(../images/Portfolio/N.L.I.O.L/black-pobeda.jpg);
+        }
+
+        &:nth-child(2) {
+          background-image: url(../images/Portfolio/N.L.I.O.L/black-old-car.jpg);
+        }
+
+        &:nth-child(3) {
+          background-image: url(../images/Portfolio/N.L.I.O.L/vaz-army.jpg);
+        }
+
+        &:nth-child(4) {
+          background-image: url(../images/Portfolio/N.L.I.O.L/more-old-cars.jpg);
+        }
+
+        &:nth-child(4) {
+          opacity: 1;
+        }
+
+        &:nth-child(6) {
+          background-image: url(../images/Portfolio/N.L.I.O.L/pobeda-from-the-side.jpg);
+        }
+
+        div.overlay {
+          color: $white-color;
+          flex-direction: column;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+        }
+        article {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          h3 {
+            font-size: 34px;
+            font-family: $fourt-font;
+          }
+          span {
+            font-size: 24px;
+            font-family: $thirdy-font;
+            color: $black-color;
+          }
+        }
+      }
+    }
+
+    h4 {
+      @include header-text;
+      font-size: 40px;
+      color: $white-color;
+    }
+    p {
+      font-weight: 100;
+      font-size: 24px;
+    }
+    .spacer {
+      width: 100%;
+      height: 20vh;
+    }
+  }
+
+  .retro-kyiv {
+    font-family: $fourt-font;
+    margin: 0px 20%;
+    margin-bottom: 10vh;
+    .about-retro {
+      h2 {
+        text-align: center;
+        letter-spacing: 3px;
+        padding: 10vh 0px;
+      }
+      p {
+        font-size: 18px;
+        font-family: $thirdy-font;
+      }
+    }
+    .work {
+      // display: flex;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        font-size: 26px;
+        font-weight: 600;
+      }
+      .horizontal-line {
+        background-color: black;
+        height: 0.5px;
+        width: 100%;
+      }
+    }
+    p {
+      font-size: 21px;
+    }
+  }
+  .big-city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $white-color;
+    background-color: #2e393c;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .about {
+      h2 {
+        font-family: $fourt-font;
+        font-size: 32px;
+        text-align: center;
+      }
+      .horizontal-line {
+        background-color: $white-color;
+        margin: 0px auto;
+        height: 1px;
+        width: 60px;
+      }
+      p {
+        font-family: $thirdy-font;
+        color: $white-color;
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+    .general {
+      img {
+        width: 90%;
+      }
+    }
+  }
+
+  .brand {
+    h2 {
+      font-size: 32px;
+      font-style: $fourt-font;
+      text-align: center;
+      text-align: center;
+      margin: 22px;
+    }
+    .horizontal-line {
+      background-color: $black-color;
+      margin: 0px auto;
+      height: 2px;
+      width: 30vh;
+    }
+    .legend-cars {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      aside {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        img {
+          width: 90%;
+          margin: 25px;
+        }
+
+        h4 {
+          font-family: $fourt-font;
+          font-size: 21px;
+        }
+        p {
+          font-family: $thirdy-font;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
 // ------------HEADER---------------
 
 .main-car {
@@ -243,7 +478,7 @@ section.log {
 
   .toolskey {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     color: $white-color;
     border: solid;
@@ -254,7 +489,7 @@ section.log {
 
     .horizontal-line {
       margin: 15px auto;
-      width: 40px;
+      width: 30px;
       height: 2px;
       background-color: $white-color;
     }

@@ -3,11 +3,10 @@ body {
   width: 100%;
   background-color: #fff;
   font-family: "Noto Sans KR", sans-serif;
-  border-style: solid;
 }
 
 nav {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 100;
   background-color: #2f2e2e;
 }
@@ -177,6 +176,225 @@ section.log article button {
   transition: 0.5s ease;
 }
 
+main.cars-portfolio {
+  background-color: floralwhite;
+}
+main.cars-portfolio section.vaz-salone {
+  background-image: url(../images/Portfolio/vaz-salone.jpg);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+}
+main.cars-portfolio article {
+  padding: 45px;
+}
+main.cars-portfolio article h4 {
+  font-size: 21px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 3px;
+}
+main.cars-portfolio article p {
+  font-size: 15px;
+  color: #90999f !important;
+  font-style: "Poly", serif;
+}
+main.cars-portfolio section.new-life {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-image: url(../images/Portfolio/N.L.I.O.L/background.jpg);
+}
+main.cars-portfolio section.new-life h2 {
+  font-size: 34px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 200;
+  color: #2f2e2e;
+  text-align: center;
+  padding-top: 12vh;
+  font-size: 32px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+main.cars-portfolio section.new-life article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  margin: 0px auto;
+  width: 90%;
+  gap: 15px;
+}
+main.cars-portfolio section.new-life article aside {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main.cars-portfolio section.new-life article aside:nth-child(1) {
+  background-image: url(../images/Portfolio/N.L.I.O.L/black-pobeda.jpg);
+}
+main.cars-portfolio section.new-life article aside:nth-child(2) {
+  background-image: url(../images/Portfolio/N.L.I.O.L/black-old-car.jpg);
+}
+main.cars-portfolio section.new-life article aside:nth-child(3) {
+  background-image: url(../images/Portfolio/N.L.I.O.L/vaz-army.jpg);
+}
+main.cars-portfolio section.new-life article aside:nth-child(4) {
+  background-image: url(../images/Portfolio/N.L.I.O.L/more-old-cars.jpg);
+}
+main.cars-portfolio section.new-life article aside:nth-child(4) {
+  opacity: 1;
+}
+main.cars-portfolio section.new-life article aside:nth-child(6) {
+  background-image: url(../images/Portfolio/N.L.I.O.L/pobeda-from-the-side.jpg);
+}
+main.cars-portfolio section.new-life article aside div.overlay {
+  color: #fff;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+main.cars-portfolio section.new-life article aside article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main.cars-portfolio section.new-life article aside article h3 {
+  font-size: 34px;
+  font-family: "Lato", sans-serif;
+}
+main.cars-portfolio section.new-life article aside article span {
+  font-size: 24px;
+  font-family: "Poly", serif;
+  color: #2f2e2e;
+}
+main.cars-portfolio section.new-life h4 {
+  font-size: 34px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 200;
+  color: #2f2e2e;
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+}
+main.cars-portfolio section.new-life p {
+  font-weight: 100;
+  font-size: 24px;
+}
+main.cars-portfolio section.new-life .spacer {
+  width: 100%;
+  height: 20vh;
+}
+main.cars-portfolio .retro-kyiv {
+  font-family: "Lato", sans-serif;
+  margin: 0px 20%;
+  margin-bottom: 10vh;
+}
+main.cars-portfolio .retro-kyiv .about-retro h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 10vh 0px;
+}
+main.cars-portfolio .retro-kyiv .about-retro p {
+  font-size: 18px;
+  font-family: "Poly", serif;
+}
+main.cars-portfolio .retro-kyiv .work {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: center;
+  align-items: center;
+}
+main.cars-portfolio .retro-kyiv .work h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+main.cars-portfolio .retro-kyiv .work .horizontal-line {
+  background-color: black;
+  height: 0.5px;
+  width: 100%;
+}
+main.cars-portfolio .retro-kyiv p {
+  font-size: 21px;
+}
+main.cars-portfolio .big-city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  background-color: #2e393c;
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main.cars-portfolio .big-city .about h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+main.cars-portfolio .big-city .about .horizontal-line {
+  background-color: #fff;
+  margin: 0px auto;
+  height: 1px;
+  width: 60px;
+}
+main.cars-portfolio .big-city .about p {
+  font-family: "Poly", serif;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+main.cars-portfolio .big-city .general img {
+  width: 90%;
+}
+main.cars-portfolio .brand h2 {
+  font-size: 32px;
+  font-style: "Lato", sans-serif;
+  text-align: center;
+  text-align: center;
+  margin: 22px;
+}
+main.cars-portfolio .brand .horizontal-line {
+  background-color: #2f2e2e;
+  margin: 0px auto;
+  height: 2px;
+  width: 30vh;
+}
+main.cars-portfolio .brand .legend-cars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main.cars-portfolio .brand .legend-cars aside {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+main.cars-portfolio .brand .legend-cars aside img {
+  width: 90%;
+  margin: 25px;
+}
+main.cars-portfolio .brand .legend-cars aside h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+}
+main.cars-portfolio .brand .legend-cars aside p {
+  font-family: "Poly", serif;
+  font-size: 18px;
+}
+
 .main-car {
   width: 100%;
   height: 100%;
@@ -209,7 +427,7 @@ section.log article button {
 }
 .main-car .toolskey {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   color: #fff;
   border: solid;
@@ -220,7 +438,7 @@ section.log article button {
 }
 .main-car .toolskey .horizontal-line {
   margin: 15px auto;
-  width: 40px;
+  width: 30px;
   height: 2px;
   background-color: #fff;
 }
