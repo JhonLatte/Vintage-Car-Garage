@@ -55,11 +55,11 @@ section.log {
     }
 
     @media screen and (max-width: 431px) {
-      height: 100vh;
+      height: 130vh;
     }
 
     @media screen and (max-width: 376px) {
-      height: 120vh;
+      height: 130vh;
     }
 
     aside.container {
@@ -112,6 +112,90 @@ section.log {
         button {
           padding: 5px;
         }
+      }
+    }
+  }
+}
+
+// -----------------------------PORTFOLIO--------------------------------
+
+main.cars-portfolio {
+  section.new-life {
+    article {
+      @media screen and (max-width: 960px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @media screen and (max-width: 690px) {
+        grid-template-columns: 1fr;
+        padding: 0px;
+      }
+    }
+  }
+  .retro-kyiv {
+    @media screen and (max-width: 1020px) {
+      margin: 0px auto;
+      .about-retro {
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .about-retro {
+      @media screen and (max-width: 410px) {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .work {
+      @media screen and (max-width: 1165px) {
+        grid-template-columns: 1fr;
+        padding: 45px;
+      }
+      p {
+        @media screen and (max-width: 470px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .big-city {
+    @media screen and (max-width: 630px) {
+      grid-template-columns: 1fr;
+      max-height: 100%;
+      height: 80vh;
+    }
+    .about {
+      h2 {
+        @media screen and (max-width: 790px) {
+          font-size: 25px;
+        }
+      }
+      p {
+        @media screen and (max-width: 790px) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: 410px) {
+          font-size: 15px;
+        }
+      }
+    }
+    .general {
+      @media screen and (max-width: 630px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .brand {
+    .legend-cars {
+      @media screen and (max-width: 580px) {
+        grid-template-columns: 1fr;
+      }
+      @media screen and (max-width: 420px) {
+        padding: 10px;
       }
     }
   }

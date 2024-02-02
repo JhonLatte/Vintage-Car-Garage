@@ -198,7 +198,7 @@ main.cars-portfolio article h4 {
 }
 main.cars-portfolio article p {
   font-size: 15px;
-  color: #90999f !important;
+  color: #90999f;
   font-style: "Poly", serif;
 }
 main.cars-portfolio section.new-life {
@@ -247,8 +247,11 @@ main.cars-portfolio section.new-life article aside:nth-child(3) {
 main.cars-portfolio section.new-life article aside:nth-child(4) {
   background-image: url(../images/Portfolio/N.L.I.O.L/more-old-cars.jpg);
 }
-main.cars-portfolio section.new-life article aside:nth-child(4) {
-  opacity: 1;
+main.cars-portfolio section.new-life article aside:nth-child(5) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 main.cars-portfolio section.new-life article aside:nth-child(6) {
   background-image: url(../images/Portfolio/N.L.I.O.L/pobeda-from-the-side.jpg);
@@ -324,8 +327,13 @@ main.cars-portfolio .retro-kyiv .work .horizontal-line {
   height: 0.5px;
   width: 100%;
 }
-main.cars-portfolio .retro-kyiv p {
+main.cars-portfolio .retro-kyiv .work .spacer {
+  width: 100%;
+  padding: 40px;
+}
+main.cars-portfolio .retro-kyiv .work p {
   font-size: 21px;
+  color: black;
 }
 main.cars-portfolio .big-city {
   display: flex;
@@ -344,6 +352,10 @@ main.cars-portfolio .big-city .about h2 {
   font-size: 32px;
   text-align: center;
 }
+main.cars-portfolio .big-city .about div.spacer {
+  width: 100%;
+  height: 15px;
+}
 main.cars-portfolio .big-city .about .horizontal-line {
   background-color: #fff;
   margin: 0px auto;
@@ -352,7 +364,7 @@ main.cars-portfolio .big-city .about .horizontal-line {
 }
 main.cars-portfolio .big-city .about p {
   font-family: "Poly", serif;
-  color: #fff;
+  color: #90999f;
   font-size: 24px;
   text-align: center;
 }
@@ -362,9 +374,11 @@ main.cars-portfolio .big-city .general img {
 main.cars-portfolio .brand h2 {
   font-size: 32px;
   font-style: "Lato", sans-serif;
+  font-weight: 400;
   text-align: center;
   text-align: center;
   margin: 22px;
+  letter-spacing: 4px;
 }
 main.cars-portfolio .brand .horizontal-line {
   background-color: #2f2e2e;

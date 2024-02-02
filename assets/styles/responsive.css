@@ -42,12 +42,12 @@
 }
 @media screen and (max-width: 431px) {
   .book section.grid {
-    height: 100vh;
+    height: 130vh;
   }
 }
 @media screen and (max-width: 376px) {
   .book section.grid {
-    height: 120vh;
+    height: 130vh;
   }
 }
 @media screen and (max-width: 822px) {
@@ -110,6 +110,81 @@
 }
 .book section.grid aside.container .bk-about button {
   padding: 5px;
+}
+
+@media screen and (max-width: 960px) {
+  main.cars-portfolio section.new-life article {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 690px) {
+  main.cars-portfolio section.new-life article {
+    grid-template-columns: 1fr;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  main.cars-portfolio .retro-kyiv {
+    margin: 0px auto;
+  }
+  main.cars-portfolio .retro-kyiv .about-retro p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 410px) {
+  main.cars-portfolio .retro-kyiv .about-retro p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1165px) {
+  main.cars-portfolio .retro-kyiv .work {
+    grid-template-columns: 1fr;
+    padding: 45px;
+  }
+}
+@media screen and (max-width: 470px) {
+  main.cars-portfolio .retro-kyiv .work p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 630px) {
+  main.cars-portfolio .big-city {
+    grid-template-columns: 1fr;
+    max-height: 100%;
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 790px) {
+  main.cars-portfolio .big-city .about h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 790px) {
+  main.cars-portfolio .big-city .about p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 410px) {
+  main.cars-portfolio .big-city .about p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 630px) {
+  main.cars-portfolio .big-city .general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 580px) {
+  main.cars-portfolio .brand .legend-cars {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 420px) {
+  main.cars-portfolio .brand .legend-cars {
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 767px) {
